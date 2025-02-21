@@ -23,12 +23,25 @@ def cooltriangle():
         for j in range(i+1):
             print("*",end =" ")
         print()
+
+def tronco_piramide():
+    base_maior = float(input("Base maior:\n>>"))
+    altura_maior = float(input("Altura maior\n>>:"))
+    base_menor = float(input("Base menor\n>>"))
+    altura_menor =float(input("Altura menor\n>>"))
+    pira_menor = (base_menor*altura_menor)/3
+    pira_maior = (base_maior*altura_maior)/3
+    tronco = pira_maior - pira_menor
+    if tronco < 0:
+        print("Erro valor invalido")
+    else:
+        print("Tronco da piramide é igual a :", tronco)
     
 
 if __name__ == '__main__':
     # calculodetriangulo()
     # exibir_itens()
-    cooltriangle()
-    
+    # cooltriangle()
+    tronco_piramide()
 
     
